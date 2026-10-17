@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KontraKid | Vidasız & Doğal Ay Ay Çocuk Gelişim Kutusu</title>
+    <style>
+        :root {
+            --primary: #4A5D4E; /* Premium Ahşap Yeşili */
+            --secondary: #D9A05B; /* Doğal Meşe/Huş Tonu */
+            --dark: #2C2C2C;
+            --light: #F9F6F0; /* Soft Krem Arka Plan */
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 20px 0;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+            letter-spacing: 1px;
+        }
+        /* HERO SECTION */
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(rgba(249,246,240,0.85), rgba(249,246,240,0.95)), url('https://unsplash.com') no-repeat center/cover;
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            background-color: var(--secondary);
+            color: white;
+            padding: 20px 45px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(217,160,91,0.4);
+            transition: all 0.3s ease;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(217,160,91,0.5);
+        }
+        /* ANKET / SİSTEM */
+        .anket-section {
+            padding: 80px 0;
+            background: white;
+            text-align: center;
+            border-radius: 30px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+        .anket-title {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .select-box {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: 2px solid var(--primary);
+            border-radius: 15px;
+            background-color: var(--light);
+            color: var(--dark);
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 30px;
+        }
+        /* DINAMIK KATALOG ALANI */
+        .katalog-display {
+            padding: 40px;
+            background: var(--light);
+            border-radius: 20px;
+            margin-top: 20px;
+            display: none;
+            text-align: left;
+        }
+        .katalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .urun-kart {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+            border-top: 4px solid var(--secondary);
+        }
+        .urun-kart h4 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.3rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        .feat-box {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+        }
+        .feat-box h3 { color: var(--primary); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">🪵 KONTRAKİD</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Plastik Çöplere, Vidalara Son.<br>18mm Saf Huş Ağacından Akıllı Geçme Sistem.</h1>
+            <p>Evde 2 gün oynanıp köşeye atılan kimyasal pilli oyuncaklar yerine; pedagog onaylı, sıfır vida, sıfır çivi ve sıfır tutkal barındıran mühendislik harikası 2 adet gelişim oyuncağı HER AY kapınıza gelsin.</p>
+            <a href="#anket-alani" class="cta-btn">🎯 Bebeğimin Ayına Özel Kutusunu Göster</a>
+        </div>
+    </section>
+
+    <section class="container features">
+        <div class="feat-box">
+            <h3>❌ Ne Çivi, Ne Vida, Ne Tutkal!</h3>
+            <p>Dünyanın en saf oyun deneyimi. 18 mm huş kontranın sürtünme ve akıllı geçme (Slot-Fit) kuvvetiyle kilitlenen tamamen kimyasalsız tasarımlar.</p>
+        </div>
+        <div class="feat-box">
+            <h3>📈 Her Ay Tam Zamanında</h3>
+            <p>Çocuğunuzun o ay tam olarak gelişmesi gereken kas grubunu ve beyin lobunu hedefleyen 2 farklı stratejik oyuncak her ay adrese teslim.</p>
+        </div>
+        <div class="feat-box">
+            <h3>💰 Aylık Şeffaf Abonelik</h3>
+            <p>Kargo, ambalaj ve QR kodlu dijital ebeveyn gelişim kılavuzları dahil her ay düzenli net 1.200 TL. Dilediğiniz an taahhütsüz tek tıkla iptal.</p>
+        </div>
+    </section>
+
+    <section class="container" id="anket-alani" style="padding-top: 20px;">
+        <div class="anket-section">
+            <h2 class="anket-title">Bebeğiniz Şu An Kaç Aylık?</h2>
+            
+            <select class="select-box" onchange="katalogGoster(this.value)">
+                <option value="">-- Ay Seçiniz --</option>
+                <option value="3">3 Aylık 👶</option>
+                <option value="4">4 Aylık 👶</option>
+                <option value="5">5 Aylık 👶</option>
+                <option value="6">6 Aylık 👶</option>
+                <option value="7">7 Aylık 🚶</option>
+                <option value="8">8 Aylık 🚶</option>
+                <option value="9">9 Aylık 🚶</option>
+                <option value="10">10 Aylık 🧩</option>
+                <option value="11">11 Aylık 🧩</option>
+                <option value="12">12 Aylık 🧩</option>
+            </select>
+
+            <!-- DİNAMİK ALAN -->
+            <div id="katalog-panel" class="katalog-display">
+                <h3 id="grup-adi" style="color: var(--primary); border-bottom: 2px solid var(--secondary); padding-bottom: 10px;"></h3>
+                <div class="katalog-grid" id="urunler-havuzu"></div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="#" class="cta-btn" style="background-color: var(--primary);">🚀 Aylık Aboneliği Başlat (Her Ay 1.200 TL)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const veriler = {
+            '3': { baslik: '3. Ay Gelişim Paketi: İlk Odaklanma ve Dokunma Başlangıcı', urunler: [
+                { ad: '🪵 Saf Kayın Kavela Çubuğu', detay: '18mm pürüzsüz tasarımlı ham çubuk. Avuç içi yakalama refleksini tetikler ve parmak kaslarını uyandırır.' },
+                { ad: '👁️ Siyah-Beyaz Duyusal Kart Bloku', detay: '3. ayda retinaları netleşmeyen bebeklerin görsel korteksini uyaran, yüksek kontrastlı dikey ahşap blok ve stand düzeni.' }
+            ]},
+            '4': { baslik: '4. Ay Gelişim Paketi: Çift El Koordinasyon Evresi', urunler: [
+                { ad: '🔄 Akıllı Geçmeli Çift Halka', detay: 'Düz levhadan 18.1mm kanallarla kesilen kilitli plakalar. Sağ-sol beyin lobunu eşzamanlı çalıştırır.' },
+                { ad: '✋ Geometrik Yakalama Plakası', detay: 'İç hatları amorf kavislerle boşaltılmış, bebeğin küçük elleriyle her açıdan rahatça kavrayabileceği vidasız düz ahşap levha.' }
+            ]},
+            '5': { baslik: '5. Ay Gelişim Paketi: Tummy Time ve Ses Takibi Çağı', urunler: [
+                { ad: '🎵 Düz Katmanlı Kilitli Çıngırak', detay: 'İki adet dişli çark şeklinde kapak ve aralarına giren düz ahşap lamalar. Yuvarlandıkça bebeği emeklemeye teşvik eder.' },
+                { ad: '🪞 Kırılmaz Aynalı Karın Üstü Standı', detay: 'Yapboz tırnaklarıyla kilitlenen 3 parça ve merkezine gömülmüş güvenli, kırılmaz akrilik ayna.' }
+            ]},
+            '6': { baslik: '6. Ay Gelişim Paketi: Doğal Diş Eti Rahatlatma & Doku Keşfi', urunler: [
+                { ad: '🦌 Vidasız Organik Diş Kaşıyıcı Figür', detay: 'Ortasında geniş bir kavrama deliği bulunan, pürüzsüz zımparalanmış ve sadece hakiki zeytinyağı ile cilalanmış doğal geyik silüeti.' },
+                { ad: '🌊 Dalgalı Doku Blokları', detay: 'CNC bıçağının üzerlerine farklı derinliklerde dairesel ve dalgalı oluklar işlediği, dokunsal algıyı geliştiren levhalar.' }
+            ]},
+            '7': { baslik: '7. Ay Gelişim Paketi: Hedefleme ve Nesne Yerleştirme', urunler: [
+                { ad: '📐 Kare Dikmeli Bultak Kule', detay: '18mm kalınlığında kare taban plakası, merkezine presle oturtulmuş kare bir dikme mil ve ortası kare delikli kilit halkalar.' },
+                { ad: '📦 Kilitli Dikdörtgen Hazne ve Küp', detay: '"Bir nesneyi sınırlandırılmış bir boşluğun içine bırakma" refleksini ve neden-sonuç ilişkisini çalıştıran vidasız sandık.' }
+            ]},
+            '8': { baslik: '8. Ay Gelişim Paketi: Nesne Kalıcılığı Çağı', urunler: [
